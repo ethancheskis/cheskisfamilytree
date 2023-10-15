@@ -1,0 +1,100 @@
+.pets-header img {
+    width: 440px;
+    height: 280px;
+    transform: translateX(600px);
+}
+
+h1 {
+    color: royalblue;
+    transform: translateX(60px) translateY(-60px);
+    font-family: cursive;
+    text-align: center;    
+    border: 3px solid royalblue;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.photo-container {
+    background-color: lightblue;
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+    transform: translateX(350px);
+}
+
+.footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: royalblue;
+    color: darkorange;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+
+    img {
+        height: 60px;
+        width: 60px;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.landscape {
+    margin: auto;
+
+    img {
+        width: 240px;
+        height: 110px;
+        border-radius: 10px;
+        border: 3px solid royalblue;
+        margin: 10px;
+    }
+}
+
+.portrait {
+    margin: auto;
+    width: fit-content;
+
+    img {
+        width: 180px;
+        height: 240px;
+        border-radius: 10px;
+        border: 3px solid royalblue;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pets-header img {
+        width: 300px;
+        height: 200px;
+        transform: translateX(300px);
+    }
+
+    h1 {
+        transform: translateX(60px) translateY(-60px);
+        font-family: cursive;
+        text-align: center;    
+        border: 3px solid royalblue;
+        border-radius: 10px;
+        width: fit-content;
+        padding: 10px;
+        margin: auto;
+    }
+}
